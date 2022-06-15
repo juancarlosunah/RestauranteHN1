@@ -1,7 +1,12 @@
-﻿
+﻿@model List<restaurantehn.Web.Models.ProductoModel>
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Comidas</h2>
 
+@foreach (var Comidas in Model)
+{
+    <p>@Comidas.id @Comidas.Descripcion</p>
+
+}
