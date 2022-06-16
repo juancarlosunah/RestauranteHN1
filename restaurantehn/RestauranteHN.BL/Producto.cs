@@ -1,6 +1,6 @@
 ﻿namespace RestauranteHN.BL
 {
-    internal class Producto
+    public class Producto
     {
         internal int id;
 

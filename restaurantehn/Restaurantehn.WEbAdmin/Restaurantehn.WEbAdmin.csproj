@@ -164,6 +164,12 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RestauranteHN.BL\RestauranteHN.BL.csproj">
+      <Project>{45709e1b-7697-4d81-ae26-d29c5accbb08}</Project>
+      <Name>RestauranteHN.BL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

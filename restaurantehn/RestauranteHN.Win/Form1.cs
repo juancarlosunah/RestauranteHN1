@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RestauranteHN.BL;
 
 namespace RestauranteHN.Win
 {
@@ -19,7 +20,12 @@ namespace RestauranteHN.Win
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola");
+            var comidasBL = new ComidasBL();
+            var listadeComidas = comidasBL.ObtenerComidas();
+
+            foreach (var Comidas in listadeComidas)
+
+                MessageBox.Show(Comidas.Descripcion);
         }
     }
 }

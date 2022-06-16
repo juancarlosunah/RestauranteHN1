@@ -10,21 +10,16 @@ namespace restaurantehn.Web.Controllers
 {
     public class ComidasController : Controller
     {
-        private object listadeComidas;
 
         // GET: Comidas
         public ActionResult Index()
         {
             var comidasBL = new ComidasBL();
-            var listadeProductos = comidasBL.ObtenerComidas();
+            var listadeComidas = comidasBL.ObtenerComidas();
 
             return View(listadeComidas);
 
         }
 
-        private ActionResult View(object listadeComidas)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
