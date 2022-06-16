@@ -5,7 +5,28 @@
 
 <h2>Comidas</h2>
 
-@foreach (var comida in Model)
-{
-<p>@comida.Descripcion</p>
-}
+
+<table class= "table table-bordered table-hover ">
+        <thead>
+        <tr>
+            <th>
+                Codigo
+            </th>
+            <th>
+                Descripcion
+            </th>
+            <th>
+                Precio
+            </th>
+        </tr>
+        </thead>
+        @foreach (var comida in Model)
+        {
+        <tr>
+            <td>@comida.id</td>
+            <td>@comida.Descripcion</td>
+            <td>@comida.Precio</td>
+        </tr>
+        }
+
+</table>
